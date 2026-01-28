@@ -67,7 +67,7 @@
             isRunning = true;
             window.requestAnimationFrame(loop);
         } catch (e) {
-            alert("카메라 연결 오류!");
+            alert("에러 발생: " + e.name + " - " + e.message);
             btn.disabled = false;
         }
     }
@@ -115,4 +115,5 @@
     }
 </script>
 </body>
+
 </html>
